@@ -2924,7 +2924,7 @@ $(function () {
 
 
   //site-wide bans
-  (function () {
+  /*(function () {
     function submit() {
       var msg = { m: "siteban" };
 
@@ -3014,7 +3014,7 @@ $(function () {
       evt.stopPropagation();
       return false;
     }
-  })();
+  })();*/
 
 
 
@@ -3025,7 +3025,7 @@ $(function () {
 
   //Accounts
 
-  (function () {
+  /*(function () {
     function logout() {
       delete localStorage.token;
       gClient.stop();
@@ -3042,7 +3042,7 @@ $(function () {
         location.replace("https://discord.com/api/oauth2/authorize?client_id=926633278100877393&redirect_uri=https%3A%2F%2Fmppclone.com%2F%3Fcallback%3Ddiscord&response_type=code&scope=identify");
       }
     });
-  })();
+  })();*/
 
 
 
