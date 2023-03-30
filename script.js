@@ -4546,8 +4546,17 @@ $(function () {
     alert("Hey, it looks like you're visiting our site through another website. Consider playing Multiplayer Piano directly at https://mppclone.com")
   }
 
-
-
+  // Custom tag
+  const e = $('#rename button[class=top-button]')[0];
+  e.addEventListener('click', () => {
+    if ($('#rename input[name=tag]').val() == '') return;
+    gClient.sendArray([{m: 'userset', set: {tag: {text: $('#rename input[name=tag]').val(), color: $('#rename input[name=tagcolor]').val()}}}]);
+  });
+    
+  gClient.on('hi', (msg) => {
+    $('#rename input[name=tag]').val(msg.u.tag.text);
+    $('#rename input[name=tagcolor]').val(msg.u.tag.color);
+  }
 
 
 
