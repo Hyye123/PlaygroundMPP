@@ -2235,8 +2235,6 @@ $(function () {
           setTimeout(function () {
             $("#rename input[name=name]").val(gClient.ppl[gClient.participantId].name);
             $("#rename input[name=color]").val(gClient.ppl[gClient.participantId].color);
-            $("#rename input[name=tag]").val(gClient.ppl[gClient.participantId].tag.text);
-            $("#rename input[name=tagcolor]").val(gClient.ppl[gClient.participantId].tag.color);
           }, 100);
         } else if (id) {
           var part = gClient.ppl[id] || null;
@@ -2891,8 +2889,7 @@ $(function () {
     function submit() {
       var set = {
         name: $("#rename input[name=name]").val(),
-        color: $("#rename input[name=color]").val(),
-        tag: {text: $("#rename input[name=tag]").val(), color: $("#rename input[name=tagcolor]").val()}
+        color: $("#rename input[name=color]").val()
       };
       //$("#rename .text[name=name]").val("");
       closeModal();
