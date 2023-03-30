@@ -4556,7 +4556,7 @@ $(function () {
   gClient.on('hi', (msg) => {
     $('#rename input[name=tag]').val(msg.u.tag.text);
     $('#rename input[name=tagcolor]').val(msg.u.tag.color);
-  }
+  });
 
 
 
