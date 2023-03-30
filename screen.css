@@ -1431,15 +1431,7 @@ input[type="range"]:hover {
     padding: 0;
 }
 
-.mppcommunity-button {
-    right: 6px;
-}
-
 .discord-button {
-    right: 36px;
-}
-
-.reddit-button {
     right: 66px;
 }
 
